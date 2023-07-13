@@ -17,4 +17,4 @@ class Post(models.Model):
     updated_date = models.DateField(auto_now=True)
 
     def __str__(self):
-        return self.category + '|' + self.title
+        return f'{self.category} {self.title}'
