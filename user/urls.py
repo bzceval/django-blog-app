@@ -5,6 +5,4 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register('', UserView)
 
-urlpatterns = [
-    path('', include(router.urls)),
-]
+urlpatterns = router.urls
