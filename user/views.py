@@ -5,6 +5,5 @@ from .serializers import (
 )
 
 class UserView(ModelViewSet):
-    class Meta:
-        queryset = User.objects.all()
-        serializer_class = UserSerializer
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
