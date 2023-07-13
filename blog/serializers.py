@@ -5,7 +5,7 @@ from .models import Category, Post
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        exclude = []
+        exclude = [] 
 
 
 class PostSerializer(serializers.ModelSerializer):
